@@ -11,7 +11,6 @@
 
 try:
     from ._models_py3 import AccountSasParameters
-    from ._models_py3 import ActiveDirectoryProperties
     from ._models_py3 import AzureEntityResource
     from ._models_py3 import AzureFilesIdentityBasedAuthentication
     from ._models_py3 import BlobContainer
@@ -86,7 +85,6 @@ try:
     from ._models_py3 import VirtualNetworkRule
 except (SyntaxError, ImportError):
     from ._models import AccountSasParameters
-    from ._models import ActiveDirectoryProperties
     from ._models import AzureEntityResource
     from ._models import AzureFilesIdentityBasedAuthentication
     from ._models import BlobContainer
@@ -199,12 +197,10 @@ from ._storage_management_client_enums import (
     ImmutabilityPolicyState,
     ImmutabilityPolicyUpdateType,
     StorageAccountExpand,
-    ListKeyExpand,
 )
 
 __all__ = [
     'AccountSasParameters',
-    'ActiveDirectoryProperties',
     'AzureEntityResource',
     'AzureFilesIdentityBasedAuthentication',
     'BlobContainer',
@@ -316,5 +312,4 @@ __all__ = [
     'ImmutabilityPolicyState',
     'ImmutabilityPolicyUpdateType',
     'StorageAccountExpand',
-    'ListKeyExpand',
 ]
