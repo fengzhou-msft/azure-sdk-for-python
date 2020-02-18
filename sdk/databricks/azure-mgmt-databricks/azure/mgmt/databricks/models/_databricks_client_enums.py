@@ -9,11 +9,26 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from ._configuration import DatabricksClientConfiguration
-from ._databricks_client import DatabricksClient
-__all__ = ['DatabricksClient', 'DatabricksClientConfiguration']
+from enum import Enum
 
-from .version import VERSION
 
-__version__ = VERSION
+class CustomParameterType(str, Enum):
 
+    bool_enum = "Bool"
+    object_enum = "Object"
+    string = "String"
+
+
+class ProvisioningState(str, Enum):
+
+    accepted = "Accepted"
+    running = "Running"
+    ready = "Ready"
+    creating = "Creating"
+    created = "Created"
+    deleting = "Deleting"
+    deleted = "Deleted"
+    canceled = "Canceled"
+    failed = "Failed"
+    succeeded = "Succeeded"
+    updating = "Updating"
